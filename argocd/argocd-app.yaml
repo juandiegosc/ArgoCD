@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: <PLACEHOLDER_REPLACE_WITH_PUBLIC_GITHUB_URL>
+    repoURL: https://github.com/juandiegosc/ArgoCD
     targetRevision: HEAD
     path: k8s
   destination:
