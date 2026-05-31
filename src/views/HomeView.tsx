@@ -4,7 +4,7 @@ function HomeView() {
   return (
     <section className="home-view">
       <div className="home-hero">
-        <h1 className="home-hero__title">ArgoCD Demo Dashboard V1</h1>
+        <h1 className="home-hero__title">ArgoCD Demo Dashboard V2</h1>
         <p className="home-hero__version">v{version}</p>
         <span role="status" className="home-hero__badge">Running on Kubernetes</span>
       </div>
