@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: react-demo
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: <PLACEHOLDER_REPLACE_WITH_PUBLIC_GITHUB_URL>
+    targetRevision: HEAD
+    path: k8s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
+  syncPolicy: {}   # manual sync initially
+  # To enable auto-sync after the image is loaded in kind, uncomment:
+  # syncPolicy:
+  #   automated:
+  #     prune: true
+  #     selfHeal: true

@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-demo
+  namespace: default
+  labels:
+    app: react-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: react-demo
+  template:
+    metadata:
+      labels:
+        app: react-demo
+    spec:
+      containers:
+        - name: react-demo
+          image: react-demo:v1.0.0
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 80
+              protocol: TCP
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 100m
+              memory: 128Mi

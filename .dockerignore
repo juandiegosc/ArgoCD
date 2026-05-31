@@ -1,0 +1,11 @@
+node_modules
+dist
+.git
+.github
+k8s
+argocd
+runbook.md
+README.md
+*.md
+.DS_Store
+coverage
