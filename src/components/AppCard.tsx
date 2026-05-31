@@ -11,7 +11,6 @@ function AppCard() {
 
   return (
     <article className="app-card">
-      <span className="app-card__logo" aria-hidden="true">⚙️</span>
       <h1 className="app-card__title">React Demo</h1>
       <p className="app-card__version" data-testid="version">v{version}</p>
       <span role="status" className="app-card__badge">Running on Kubernetes</span>

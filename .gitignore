@@ -6,3 +6,4 @@ dist
 coverage
 .atl
 .kiro
+.vscode/settings.json
