@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: react-demo
-          image: react-demo:v1.0.4
+          image: react-demo:v1.0.5
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 80
